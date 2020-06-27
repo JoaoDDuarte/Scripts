@@ -1,0 +1,9 @@
+#!/bin/sh
+sudo pacman -Scc
+sudo pacman -Rns $(pacman -Qtdq)
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+python $DIR/rmshit.py
+
+
+
+
